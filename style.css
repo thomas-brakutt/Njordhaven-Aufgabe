@@ -8,6 +8,10 @@ html {
   font-family: "Be Vietnam Pro";
 }
 
+h2 {
+  font-family: "Abyssinica SIL";
+}
+
 body {
   height: 100%;
   max-width: 1920px;
@@ -17,24 +21,42 @@ body {
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 1.8rem;
+}
+
+/* ----------  linke Logo --------------*/
+
+.logo-name {
+  display: grid;
+  grid-template-columns: auto 2fr;
   align-items: center;
-  margin: 2rem;
-}
-.logo-name img + p {
-  display: inline;
+  gap: 1rem;
 }
 
-.logo-name > p {
-  margin: 1rem;
-  margin-bottom: 1rem;
+.logo-font {
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
 
-menu {
-  margin-left: 3rem;
-  padding: 0;
+/* --------- rechte Nav-Menue ----------*/
+
+.nav-menu {
+  display: flex;
+  justify-content: end;
 }
-menu > a + a {
-  margin-left: 1rem;
+
+.nav-links {
+  color: black;
+  list-style: none;
+}
+
+menu > li > a {
+  margin-left: 2rem;
+}
+
+menu > li {
+  list-style: none;
 }
 
 /* ----------  Main-styles -----------  */
@@ -42,9 +64,46 @@ menu > a + a {
 .main-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0;
 }
 
 .main-content img {
   width: 100%;
   height: 100%;
+}
+
+.weisser-sessel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.weisser-sessel > img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: bottom center;
+}
+
+.hyggehaven {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem;
+  text-align: center;
+}
+
+.link-hyggehaven {
+  list-style: none;
+}
+
+.link-hyggehaven > a {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
+.hyggehaven > p {
+  margin-bottom: 2rem;
 }
