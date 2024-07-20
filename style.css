@@ -72,6 +72,31 @@ menu > li {
   height: 100%;
 }
 
+.picture-text {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+}
+
+.picture-text h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: "Abyssinica SIL";
+  position: absolute;
+  width: 26rem;
+  padding-bottom: 6rem;
+  _background-color: gray;
+}
+
+.svg-pfeile {
+  width: 2rem;
+  position: absolute;
+  _background-color: gray;
+}
+
 /* weisser Sessel + HyggeHaven */
 
 .weisser-sessel {
@@ -104,6 +129,21 @@ menu > li {
   color: white;
   padding: 0.5rem 1.5rem;
   text-decoration: none;
+}
+
+.link-hyggehaven > a {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  transition-property: background-color, color;
+  transition-duration: 0.7s, 0.7s;
+}
+
+.link-hyggehaven > a:hover {
+  background-color: white;
+  color: black;
 }
 
 .hyggehaven > p {
@@ -143,6 +183,13 @@ menu > li {
   color: white;
   padding: 0.5rem 1.5rem;
   text-decoration: none;
+  transition-property: background-color, color;
+  transition-duration: 0.7s, 0.7s;
+}
+
+.link-scandicraft > a:hover {
+  background-color: white;
+  color: black;
 }
 
 .scandicraft > p {
@@ -152,22 +199,33 @@ menu > li {
 /* -------------- Footer-styles -----------*/
 
 footer {
-  background-color: bisque;
-  height: 13rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2rem;
 }
 
-footer > li {
+footer > p {
+  margin: 0;
+}
+
+footer > img {
+  filter: brightness(1000%);
+  margin-top: 1.5rem;
+}
+
+nav > li {
   display: inline;
 }
 
-_.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+nav > li > a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 200;
+  padding: 0.5rem;
 }
 
-.footer img {
-  width: 100%;
-  height: 100%;
+.nav-footer {
+  margin-top: 2rem;
 }
