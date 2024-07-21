@@ -78,7 +78,7 @@ menu > li {
   align-items: center;
   position: absolute;
   left: 50%;
-  top: 75%;
+  top: 100%;
 }
 
 .picture-text h1 {
@@ -87,8 +87,7 @@ menu > li {
   font-family: "Abyssinica SIL";
   position: absolute;
   width: 26rem;
-  padding-bottom: 6rem;
-  _background-color: gray;
+  margin-bottom: 15rem;
 }
 
 .svg-pfeile {
